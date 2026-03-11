@@ -2,7 +2,7 @@
   <div class="column">
     <app-card [firstname]="cardForm.value.firstname" [cardNumber]="cardForm.value.cardNumber" [expiration]="cardForm.value.expiration"></app-card>
   </div>
-  <div class="column">
+  <div class="column card">
     <form [formGroup]="cardForm" (ngSubmit)="onSubmit()">
       <app-input label="Firstname" [control]="cardForm.controls.firstname"></app-input>
       <app-input label="Card Number" [control]="cardForm.controls.cardNumber"></app-input>
